@@ -3,7 +3,7 @@ Cyber Threat Intelligence (CTI) Correlation Analysis Project
 
 This project aims structured CTI correlation analysis so that more meaningful intelligence could be retrieved from each CTI of cyber incidents (or events).
 
-For the objective the novel concepts Event Relation Tree (ERT) and Event Transition Graph (ETG). Please read the first of the below reference for detailed concepts and construction processes.
+For the objective the novel concepts Event Relation Tree (ERT) and Event Transition Graph (ETG). Please read the first paper of the below reference for detailed concepts and construction processes.
 
 
 [Reference]
