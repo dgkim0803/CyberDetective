@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <debug>false</debug>
+    <anonymize>false</anonymize>
+    <draw_relation>true</draw_relation>
+    <anonymize_rate>0.8</anonymize_rate>
+    <node_size>M</node_size>    % small(S), medium(M), large(L)
+    <text_size>S</text_size>    % small(S), medium(M), large(L)
+    <db_path>/Volumes/Data/misp.export_yara.xml</db_path>
+</config>
