@@ -89,7 +89,17 @@ public class Event {
 	void setEventInformation(Node event){
 		Element elem = (Element) event;
 		id = elem.getElementsByTagName("id").item(0).getTextContent();
-		eventName = elem.getElementsByTagName("info").item(0).getTextContent();
+		//eventName = elem.getElementsByTagName("info").item(0).getTextContent();
+
+		NodeList children = elem.getChildNodes();
+		for (int k = 0; k < children.getLength(); k++) {
+			Node child = children.item(k);
+			if( child.getNodeName().equals("info") ){
+				eventName = child.getTextContent();
+				break;
+			}
+		}
+		
 		String[] date = elem.getElementsByTagName("date").item(0).getTextContent().split("[-]");
 		eventTime.setYear(Integer.parseInt(date[0]));
 		eventTime.setMonth(Integer.parseInt(date[1])-1);

@@ -505,6 +505,8 @@ public class EventTransitionGraph extends JPanel  implements ViewerListener, Run
 
 		if( pivot_event.node.eventName.contains("메일") )
 			node.addAttribute("ui.style", "fill-mode:image-scaled; fill-image:url('email.jpg'); size:"+Main.nodeSize+"px; text-alignment:above; shadow-mode:plain; shadow-color:red; shadow-offset:0; text-size:"+Main.textSize+"; text-style:"+Main.textStyle+";");
+		else if(LibIoC_DK.isHash(pivot_event.node.eventName).equals("None") && pivot_event.node.eventName.contains("."))
+			node.addAttribute("ui.style", "fill-mode:image-scaled; fill-image:url('report.jpg'); size:"+Main.nodeSize+"px; text-alignment:above; shadow-mode:plain; shadow-color:red; shadow-offset:0; text-size:"+Main.textSize+"; text-style:"+Main.textStyle+";");
 		else
 			node.addAttribute("ui.style", "fill-mode:image-scaled; fill-image:url('malware.jpg'); size:"+Main.nodeSize+"px; text-alignment:above; shadow-mode:plain; shadow-color:red; shadow-offset:0; text-size:"+Main.textSize+"; text-style:"+Main.textStyle+";");
 

@@ -30,7 +30,6 @@ public class Main {
 		try {
 			m.setConfig("config.xml");
 			m.run( args );
-			//m.test();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -42,8 +41,6 @@ public class Main {
 		CyTec = new Detective();
 	}
 	
-	void test(){
-	}
      
 	void run( String[] args ) throws Exception{
 		int numOfInitialEvents = args.length;
